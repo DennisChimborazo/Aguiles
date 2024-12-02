@@ -1,0 +1,41 @@
+/* Estilos básicos para el contenedor principal */
+.login-container {
+    display: flex;
+    height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para la barra lateral (botones) */
+.sidebar {
+    display: flex;
+    flex-direction: column; /* Alinea los botones verticalmente */
+    width: 200px; /* Ajusta el ancho de la barra lateral */
+    background-color: #f0f0f0; /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombras opcionales */
+}
+
+.sidebar button {
+    margin-bottom: 10px; /* Espaciado entre botones */
+    padding: 10px;
+    border: none;
+    background-color: #007bff; /* Color de los botones */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.sidebar button:hover {
+    background-color: #0056b3; /* Color al pasar el cursor */
+}
+
+/* Estilo para la sección principal */
+.content {
+    flex-grow: 1; /* Ocupa el espacio sobrante */
+    padding: 20px; /* Espaciado interno */
+    background-color: #ffffff; /* Color de fondo */
+    overflow-y: auto; /* Permite el desplazamiento si el contenido es largo */
+}
